@@ -1,8 +1,7 @@
-
 name: Push to Space
 on: push
   branches:
-      - main
+    - main
 
 jobs:
   push-to-space:
