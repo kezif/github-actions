@@ -1,7 +1,8 @@
 name: Push to Space
-on: push
-  branches:
-    - main
+
+on: 
+  push:
+    branches: ['main']
 
 jobs:
   push-to-space:
@@ -14,4 +15,4 @@ jobs:
           access_token: ${{ secrets.ACCESS_TOKEN }}
           project_id: ${{ secrets.PROJECT_ID }}
           space_push: true
-          list_on_discovery: true
+          list_on_discovery: false
