@@ -22,7 +22,7 @@ def get_db():
 @app.get('/')
 def main_entry():
     '''Welcome to the link shortener service. Access /docs to see how to use api'''
-    return {'Welcome': 'Welcome to the link shortener service. Access /docs to see how to use api'}
+    return {'Welcome': 'Welcome to the link shortener service. Access /docs to see how to use api!'}
 
 
 @app.post('/', response_model=schemas.Url_)
