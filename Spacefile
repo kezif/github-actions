@@ -1,0 +1,10 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: url-short
+    src: ./
+    engine: python3.9
+    primary: true
+    run: uvicorn url_shortener.main:app 
+    public_routes:
+      - "/*"
