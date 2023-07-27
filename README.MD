@@ -1,4 +1,5 @@
 ![Tests](https://github.com/kezif/github-actions-playground/actions/workflows/tests.yml/badge.svg)
+![Deployed](https://github.com/kezif/github-actions-playground/actions/workflows/push-to-space.yml/badge.svg)
 
 I created this project to  to get fancy github test passing badge and git familiar with github action.
 
