@@ -1,0 +1,26 @@
+name: Lint
+
+on: 
+  workflow_call:
+
+permissions:
+  contents: write
+  
+  
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run black
+        uses: psf/black@stable
+        with:
+          options: "--verbose"
+          jupyter: true
+
+      - name: Run isort
+        uses: isort/isort-action@v1
+        with:
+            requirements-files: "requirements.txt"
+            configuration: "--verbose --profile black"
+            
