@@ -1,13 +1,13 @@
-from pydantic import BaseModel, AnyUrl
 from datetime import datetime
+
+from pydantic import AnyUrl, BaseModel
 
 
 class UrlBase(BaseModel):
-    original_url: AnyUrl 
+    original_url: AnyUrl
 
 
-class UrlCreate(UrlBase):
-    ...
+class UrlCreate(UrlBase): ...
 
 
 class Url_(UrlBase):
